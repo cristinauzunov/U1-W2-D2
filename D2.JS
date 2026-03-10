@@ -106,23 +106,17 @@ if( totalShoppingCart > 50 ) {
 let a = 10
 let b = 5
 let c = 12
-let primo, secondo, terzo
 
-if(a>=b && a>=c){
-    primo = a
-    if (b >= c){
-        secondo = c
-        terzo = b
-    } else {
-        secondo = b
-        terzo = c
-    }
-
-    } 
-
-
-
-
+if(a < b){
+    [a, b] = [b, a]
+}
+if( a < c){
+    [a, c]=[c, a]
+}
+if(b < c){
+    [b, c]=[c, b]
+}
+console.log (a, b, c,)
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
@@ -161,15 +155,10 @@ if ( number3 % 2 === 0){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let val = 7
-  if (val < 5) {
-      console.log("Meno di 5");
-    } else if (val < 10) {
-      console.log("Meno di 10");
-    } else {
-      console.log("Uguale a 10 o maggiore");
+let val = 10
+  if (val < 10 && val >= 5 ) {
+      console.log("Meno di 5")
     }
-
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
@@ -178,10 +167,11 @@ const me = {
   name: 'John',
   lastName: 'Doe',
   skills: ['javascript', 'html', 'css'],
-  city: "Toronto"
+  city: "Toronto",
 }
-delete me.lastName
-me.skills.splice(3, 2)
+
+me.skills.pop()
+me.skills.splice(2, 1)
 
 
 
@@ -199,7 +189,7 @@ me.skills.splice(3, 2)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-// ho scritto tutto spra insieme
+// ho scritto tutto sopra insieme
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
