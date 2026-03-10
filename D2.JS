@@ -106,6 +106,20 @@ if( totalShoppingCart > 50 ) {
 let a = 10
 let b = 5
 let c = 12
+let primo, secondo, terzo
+
+if(a>=b && a>=c){
+    primo = a
+    if (b >= c){
+        secondo = c
+        terzo = b
+    } else {
+        secondo = b
+        terzo = c
+    }
+
+    } 
+
 
 
 
