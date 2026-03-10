@@ -167,11 +167,14 @@ const me = {
   name: 'John',
   lastName: 'Doe',
   skills: ['javascript', 'html', 'css'],
-  city: "Toronto",
+  
 }
 
-me.skills.pop()
-me.skills.splice(2, 1)
+me.city = "Toronto"
+
+
+
+
 
 
 
@@ -184,12 +187,17 @@ me.skills.splice(2, 1)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+me.skills.pop()
+
+
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-// ho scritto tutto sopra insieme
+
+me.skills.splice(2, 1)
+
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
